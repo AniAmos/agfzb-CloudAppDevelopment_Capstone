@@ -107,7 +107,8 @@ def get_dealerships(request):
 
 # Create a `get_dealer_details` view to render the reviews of a dealer
 # def get_dealer_details(request, dealer_id):
-# ...
+# 
+# ...render(request, 'djangoapp/index.html', context)
 
 # Create a `add_review` view to submit a review
 # def add_review(request, dealer_id):

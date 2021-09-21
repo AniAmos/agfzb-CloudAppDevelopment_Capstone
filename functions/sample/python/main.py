@@ -11,10 +11,8 @@ from cloudant.client import Cloudant
 from cloudant.error import CloudantException
 import requests
 
-
 def main(dict):
     databaseName = "dealerships"
-
     try:
         client = Cloudant.iam(
             account_name=dict["COUCH_USERNAME"],
