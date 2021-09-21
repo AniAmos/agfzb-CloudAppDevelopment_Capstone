@@ -16,12 +16,19 @@
     <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'djangoapp:about' %}">About Us</a>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'djangoapp:index' %}">Dealership Review</a>
+            <a class="navbar-brand" href="{% url 'djangoapp:about' %}"> | About Us</a>
+            <a class="navbar-brand" href="{% url 'djangoapp:contact' %}"> | Contact Us</a>
+             <a class="navbar-brand" href="{% url 'djangoapp:poetry' %}"> | Nice Poetry</a>
+        </div>
             {% if user.is_authenticated is False %}
             <form action="{% url 'djangoapp:login' %}"  method="POST">
                 {% csrf_token %}
-                <input type="text" name="usernameLoginField" placeholder="Username">
-                <input type="text" name="passwordLoginField" placeholder="Password">
+                <!--<input type="text" name="usernameLoginField" placeholder="Username">
+                <input type="text" name="passwordLoginField" placeholder="Password">-->
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="psw" placeholder="Password">
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
             <form action="{% url 'djangoapp:registration' %}"  method="GET">
@@ -38,6 +45,10 @@
     </nav>
 
     <!--Add a dealer table here -->
+    <p class="lead mt-5 text-center">
+        <b>Welcome</b> to Best Cars dealership, home to the best cars in North America. <br>We sell domestic and imported cars at reasonable prices.
+    </p>
+
 
     </body>
 

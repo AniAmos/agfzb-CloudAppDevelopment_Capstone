@@ -20,7 +20,6 @@
                 <a class="navbar-brand" href="{% url 'djangoapp:index' %}">Dealership Review</a>
                 <a class="navbar-brand" href="{% url 'djangoapp:about' %}"> | About Us</a>
                 <a class="navbar-brand" href="{% url 'djangoapp:contact' %}"> | Contact Us</a>
-                <a class="navbar-brand" href="{% url 'djangoapp:poetry' %}"> | Nice Poetry</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
@@ -45,13 +44,34 @@
         </div>
     </nav>
 
-    <p class="mt-5 h1 text-center">
-        Contacts:
-        <ul class="lead mt-3 text-center">
-        <li class="mt-2">Address: Captain Morgain Street 420</li>
-        <li class="mt-2">Telephone: 0123456789</li>
-    </ul>
-    </p>
+    <p class="lead mt-5 text-center">
+    <b>Poetry of the Month: "Stufen" from Hermann Hesse</b> 
+    <p class="lead mt-5 text-center">
+Wie jede Blüte welkt und jede Jugend<br>
+Dem Alter weicht, blüht jede Lebensstufe,<br>
+Blüht jede Weisheit auch und jede Tugend<br>
+Zu ihrer Zeit und darf nicht ewig dauern.<br>
+Es muß das Herz bei jedem Lebensrufe<br>
+Bereit zum Abschied sein und Neubeginne,<br>
+Um sich in Tapferkeit und ohne Trauern<br>
+In andre, neue Bindungen zu geben.<br>
+Und jedem Anfang wohnt ein Zauber inne,<br>
+Der uns beschützt und der uns hilft, zu leben. <br>
+<br><br>
+Wir sollen heiter Raum um Raum durchschreiten,<br>
+An keinem wie an einer Heimat hängen,<br>
+Der Weltgeist will nicht fesseln uns und engen,<br>
+Er will uns Stuf´ um Stufe heben, weiten.<br>
+Kaum sind wir heimisch einem Lebenskreise<br>
+Und traulich eingewohnt, so droht Erschlaffen;<br>
+Nur wer bereit zu Aufbruch ist und Reise,<br>
+Mag lähmender Gewöhnung sich entraffen.<br>
+<br><br>
+Es wird vielleicht auch noch die Todesstunde<br>
+Uns neuen Räumen jung entgegen senden,<br>
+Des Lebens Ruf an uns wird niemals enden,<br>
+Wohlan denn, Herz, nimm Abschied und gesunde!<br>
+    </p></p>
 </body>
 
 </html>
