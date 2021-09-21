@@ -6,6 +6,6 @@
     buildpack: python_buildpack
   - name: aniamoscar-nginx
     routes:
-      - route: aniamoscar.eu-gb.mybluemix.net
+      - route: aniamoscar.eu-gb.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
