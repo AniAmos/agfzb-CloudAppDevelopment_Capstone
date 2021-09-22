@@ -1,11 +1,11 @@
   applications:
-  - name: aniamoscar
+  - name: dealerreiew
     routes:
-      - route: aniamoscar.eu-gb.mybluemix.net
+      - route: PUT THE ROUTE HERE
     memory: 128M
     buildpack: python_buildpack
   - name: aniamoscar-nginx
     routes:
-      - route: aniamoscar.eu-gb.mybluemix.net/static
+      - route: PUT THE ROUTE HERE/static
     memory: 128M
     buildpack: staticfile_buildpack
